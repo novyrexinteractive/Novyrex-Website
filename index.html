@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Novyrex Interactive – Independent Game Development. Entdecke unsere Spiele und Projekte.">
+  <title>Novyrex Interactive | Game Development</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #090d18;
+      color: #f4f6ff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #20283a;
+      position: sticky;
+      top: 0;
+      background: rgba(9,13,24,.96);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .logo span { color: #54b9ff; }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+
+    nav a:hover, a:hover { color: #54b9ff; }
+
+    .hero {
+      min-height: 520px;
+      padding: 110px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 75% 40%, #12345b 0%, transparent 45%),
+        linear-gradient(135deg, #0c1425, #090d18);
+    }
+
+    .tag {
+      color: #54b9ff;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.05;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 580px;
+      color: #aab6ca;
+      font-size: 18px;
+    }
+
+    section { padding: 75px 8%; }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    .muted { color: #aab6ca; }
+
+    .game-card {
+      max-width: 700px;
+      padding: 30px;
+      border: 1px solid #263751;
+      border-radius: 16px;
+      background: linear-gradient(145deg, #14223a, #0d1423);
+    }
+
+    .game-card h3 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+
+    .status {
+      display: inline-block;
+      color: #8bd5ff;
+      background: #173451;
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: 12px;
+    }
+
+    .contact {
+      background: #101a2b;
+    }
+
+    a { color: #69c4ff; }
+
+    footer {
+      padding: 30px 8%;
+      border-top: 1px solid #20283a;
+      color: #8491a7;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media(max-width: 650px) {
+      header { align-items: flex-start; flex-direction: column; gap: 12px; }
+      nav a { margin: 0 16px 0 0; }
+      .hero { min-height: 430px; padding-top: 75px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NOVYREX<span> INTERACTIVE</span></div>
+  <nav>
+    <a href="#spiele">Spiele</a>
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="tag">Independent Game Development</div>
+    <h1>We create<br>new worlds.</h1>
+    <p>
+      Willkommen bei Novyrex Interactive.
+      Wir entwickeln eigene Spielerlebnisse und arbeiten
+      an neuen Ideen für die nächste Generation mobiler Spiele.
+    </p>
+  </section>
+
+  <section id="spiele">
+    <div class="tag">Unsere Projekte</div>
+    <h2>Unsere Spiele</h2>
+
+    <div class="game-card">
+      <h3>Neon Gunner</h3>
+      <span class="status">In Entwicklung</span>
+      <p class="muted">
+        Ein futuristischer Mobile-Shooter, in dem Reaktion,
+        taktische Entscheidungen und Upgrades über den Erfolg entscheiden.
+      </p>
+    </div>
+  </section>
+
+  <section id="ueber-uns">
+    <div class="tag">Das Studio</div>
+    <h2>Über Novyrex Interactive</h2>
+    <p class="muted">
+      Novyrex Interactive ist ein unabhängiges
+      Spieleentwicklungsprojekt. Unser Ziel ist es,
+      eigene Spielideen zum Leben zu erwecken und
+      spannende Erlebnisse für mobile Plattformen zu entwickeln.
+    </p>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="tag">Kontakt</div>
+    <h2>Kontakt aufnehmen</h2>
+    <p class="muted">
+      Fragen zu unseren Projekten oder zu Novyrex Interactive?
+    </p>
+    <a href="mailto:Novyrexinteractive@gmail.com">
+      Novyrexinteractive@gmail.com
+    </a>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Novyrex Interactive</span>
+  <span>Independent Game Development</span>
+</footer>
+
+</body>
+</html>
+
